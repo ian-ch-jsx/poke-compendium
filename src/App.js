@@ -6,11 +6,11 @@ import PokeList from './components/PokeList/PokeList';
 function App() {
   const [pokemon, setPokemon] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [query, setQuery] = useState('');
+  // const [query, setQuery] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await getPokemon(query);
+      const data = await getPokemon();
       setPokemon(data.results);
       setLoading(false);
     };
