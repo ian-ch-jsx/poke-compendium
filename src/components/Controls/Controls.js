@@ -1,3 +1,5 @@
+import './Controls.css';
+
 export default function Controls({ query, setQuery, setLoading }) {
   return (
     <div className="controls">
