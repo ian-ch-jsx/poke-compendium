@@ -29,6 +29,7 @@ function App() {
     <div className="App">
       <h1>Pokedex</h1>
       <Controls query={query} setQuery={setQuery} setLoading={setLoading} />
+
       {loading && <span className="loader"></span>}
       {!loading && (
         <>

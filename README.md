@@ -1,5 +1,13 @@
 # React Compendium
 
+## To Do
+
+- add pagination
+- add filtering for...
+- add 'sort by'
+
+---
+
 ## Rubric
 
 | Tasks                                                            | Points |
