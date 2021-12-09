@@ -28,3 +28,16 @@
 img.image {
   width: 150px;
 }
+
+.poke-card p {
+  padding: 0px;
+  margin: 5px;
+}
+.poke-card a {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.poke-card a:hover {
+  font-weight: bold;
+}
