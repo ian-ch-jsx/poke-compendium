@@ -13,6 +13,7 @@ export default function Controls({ query, setQuery, setLoading, order, setOrder,
         }}
       />
       <select value={type} onChange={(e) => setType(e.target.value)}>
+        <option value="all">All</option>
         <option value="bug">Bug</option>
         <option value="dark">Dark</option>
         <option value="dragon">Dragon</option>

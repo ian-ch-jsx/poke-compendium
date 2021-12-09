@@ -21,4 +21,4 @@
 | Update state with useEffect using empty dependency array         |  [x] 2 |
 | Update state with useEffect conditionally using dependency array |  [x] 2 |
 | Snapshot testing                                                 |   [] 2 |
-| Deployed on Netlify with passing CI                              |   [] 2 |
+| Deployed on Netlify with passing CI                              |  [x] 2 |

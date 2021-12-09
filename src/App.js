@@ -9,7 +9,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState('');
   const [order, setOrder] = useState('asc');
-  const [type, setType] = useState('bug');
+  const [type, setType] = useState('all');
 
   useEffect(() => {
     let timer;
