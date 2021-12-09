@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-direction: row;
-  margin: auto auto 50px auto;
+  margin: auto auto 20px auto;
   flex-wrap: wrap;
   justify-content: center;
   font-family: 'Inconsolata', sans-serif;
@@ -40,4 +40,15 @@ img.image {
 
 .poke-card a:hover {
   font-weight: bold;
+}
+
+.navigation {
+  margin-bottom: 20px;
+}
+
+.navigation p {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 0.75rem;
+  color: white;
+  margin: 0;
 }

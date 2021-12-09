@@ -30,7 +30,7 @@ export default function PokeList({ pokemon, currentPage, setCurrentPage, setLoad
         ))}
       </div>
       <div className="navigation">
-        Page {currentPage}
+        <p>PAGE {currentPage}</p>
         <button onClick={handlePrevPage}>Previous</button>
         <button onClick={handleNextPage}>Next</button>
       </div>
