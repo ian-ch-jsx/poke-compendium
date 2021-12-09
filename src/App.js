@@ -10,22 +10,28 @@ function App() {
   const [query, setQuery] = useState('');
 
   useEffect(() => {
+    let timer;
     const fetchData = async () => {
       const data = await getPokemon(query);
       setPokemon(data.results);
-      setLoading(false);
+      timer = setTimeout(() => {
+        setLoading(false);
+      }, 500);
     };
     if (loading) {
       fetchData();
     }
+    return () => {
+      clearInterval(timer);
+    };
   }, [loading, query]);
   return (
     <div className="App">
       <h1>Pokedex</h1>
+      <Controls query={query} setQuery={setQuery} setLoading={setLoading} />
       {loading && <span className="loader"></span>}
       {!loading && (
         <>
-          <Controls query={query} setQuery={setQuery} setLoading={setLoading} />
           <PokeList pokemon={pokemon} />
         </>
       )}
