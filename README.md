@@ -3,8 +3,7 @@
 ## To Do
 
 - add pagination
-- add filtering for...
-- add 'sort by'
+- import library component(s)
 
 ---
 

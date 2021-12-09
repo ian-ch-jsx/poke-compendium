@@ -1,6 +1,6 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import { getPokemon } from './services/pokemon';
+import { getPokemon, getType } from './services/pokemon';
 import PokeList from './components/PokeList/PokeList';
 import Controls from './components/Controls/Controls';
 
@@ -9,12 +9,13 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState('');
   const [order, setOrder] = useState('asc');
-  const [type, setType] = useState('all');
+  const [type, setType] = useState([]);
+  const [selectedType, setSelectedType] = useState('all');
 
   useEffect(() => {
     let timer;
     const fetchData = async () => {
-      const data = await getPokemon(query, order, type);
+      const data = await getPokemon(query, order, selectedType);
       setPokemon(data.results);
       timer = setTimeout(() => {
         setLoading(false);
@@ -26,7 +27,15 @@ function App() {
     return () => {
       clearInterval(timer);
     };
-  }, [loading, query, order, type]);
+  }, [loading, query, order, selectedType]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await getType();
+      setType(data);
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="App">
@@ -38,7 +47,8 @@ function App() {
         order={order}
         setOrder={setOrder}
         type={type}
-        setType={setType}
+        selectedType={selectedType}
+        setSelectedType={setSelectedType}
       />
 
       {loading && <span className="loader"></span>}

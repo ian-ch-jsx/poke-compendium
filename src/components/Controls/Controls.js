@@ -1,7 +1,15 @@
 // import { getPokemon } from '../../services/pokemon';
 import './Controls.css';
 
-export default function Controls({ query, setQuery, setLoading, order, setOrder, type, setType }) {
+export default function Controls({
+  query,
+  setQuery,
+  setLoading,
+  order,
+  setOrder,
+  selectedType,
+  setSelectedType,
+}) {
   return (
     <div className="controls">
       <input
@@ -12,7 +20,7 @@ export default function Controls({ query, setQuery, setLoading, order, setOrder,
           setQuery(e.target.value);
         }}
       />
-      <select value={type} onChange={(e) => setType(e.target.value)}>
+      <select value={selectedType} onChange={(e) => setSelectedType(e.target.value)}>
         <option value="all">All</option>
         <option value="bug">Bug</option>
         <option value="dark">Dark</option>
