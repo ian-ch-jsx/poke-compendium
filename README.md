@@ -18,7 +18,7 @@
 | Conditionally render a loading state                             |  [x] 2 |
 | Make an api request with fetch and useEffect when page loads     |  [x] 2 |
 | Add a key to each item rendered from data fetched                |  [x] 2 |
-| Update state with useEffect using empty dependency array         |   [] 2 |
+| Update state with useEffect using empty dependency array         |  [x] 2 |
 | Update state with useEffect conditionally using dependency array |  [x] 2 |
 | Snapshot testing                                                 |   [] 2 |
 | Deployed on Netlify with passing CI                              |   [] 2 |
