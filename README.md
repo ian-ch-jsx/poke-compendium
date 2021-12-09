@@ -1,25 +1,16 @@
-# Alchemy React Base Template
+# React Compendium
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Rubric
 
-Use this template for all your "from scratch" deliverables. To start, simply run
-
-- `npm install`
-- `npm start`
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Tasks                                                            | Points |
+| ---------------------------------------------------------------- | -----: |
+| See a loading state while data is being fetched on page load     |  [x] 2 |
+| See a list of characters when the page loads                     |  [x] 2 |
+| Filter the data retrieved                                        |   [] 2 |
+| Conditionally render a loading state                             |  [x] 2 |
+| Make an api request with fetch and useEffect when page loads     |  [x] 2 |
+| Add a key to each item rendered from data fetched                |  [x] 2 |
+| Update state with useEffect using empty dependency array         |   [] 2 |
+| Update state with useEffect conditionally using dependency array |  [x] 2 |
+| Snapshot testing                                                 |   [] 2 |
+| Deployed on Netlify with passing CI                              |   [] 2 |
