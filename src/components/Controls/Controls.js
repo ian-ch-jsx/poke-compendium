@@ -21,6 +21,9 @@ export default function Controls({
         }}
       />
       <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
+        <InputLabel id="type-label" htmlFor="uncontrolled-native">
+          Type
+        </InputLabel>
         <Select
           className="select"
           labelId="type-label"
@@ -49,7 +52,10 @@ export default function Controls({
           <MenuItem value="water">Water</MenuItem>
         </Select>
       </FormControl>
-      <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
+      <FormControl variant="standard" sx={{ m: 1, minWidth: 120, color: '.menu' }}>
+        <InputLabel id="order-label" variant="standard" htmlFor="uncontrolled-native">
+          order
+        </InputLabel>
         <Select
           className="select"
           labelId="order-label"

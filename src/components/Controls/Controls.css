@@ -1,17 +1,18 @@
 .controls {
-  margin: auto;
+  margin: auto 0;
   display: flex;
   justify-content: center;
-  vertical-align: top;
+  align-items: flex-end;
 }
 
 .select {
   background-color: #8ec5fc;
   background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
-  border-radius: 20px;
+  border-radius: 50px;
   border: 0px;
   filter: drop-shadow(5px 5px 4px #000000);
   height: 30px;
+  border: 0;
 }
 
 #type-label,
