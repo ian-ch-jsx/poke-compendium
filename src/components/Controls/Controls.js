@@ -12,14 +12,6 @@ export default function Controls({
 }) {
   return (
     <div className="controls">
-      <input
-        type="text"
-        placeholder="search by name"
-        value={query}
-        onChange={(e) => {
-          setQuery(e.target.value);
-        }}
-      />
       <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
         <InputLabel id="type-label" htmlFor="uncontrolled-native">
           Type
@@ -66,6 +58,14 @@ export default function Controls({
           <MenuItem value="desc"> Descending</MenuItem>
         </Select>
       </FormControl>
+      <input
+        type="text"
+        placeholder="search by name"
+        value={query}
+        onChange={(e) => {
+          setQuery(e.target.value);
+        }}
+      />
       <button onClick={() => setLoading(true)}>Search</button>
     </div>
   );

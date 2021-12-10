@@ -1,11 +1,5 @@
 # React Compendium
 
-## To Do
-
-- import library component(s)
-
----
-
 ## Rubric
 
 | Tasks                                                            | Points |
@@ -18,5 +12,5 @@
 | Add a key to each item rendered from data fetched                |  [x] 2 |
 | Update state with useEffect using empty dependency array         |  [x] 2 |
 | Update state with useEffect conditionally using dependency array |  [x] 2 |
-| Snapshot testing                                                 |   [] 2 |
+| Snapshot testing                                                 |  [x] 2 |
 | Deployed on Netlify with passing CI                              |  [x] 2 |
