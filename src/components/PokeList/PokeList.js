@@ -15,14 +15,14 @@ export default function PokeList({ pokemon, currentPage, setCurrentPage, setLoad
       <div className="container">
         {pokemon.map((poke) => (
           <>
-            <div className="poke-card">
-              <h3 key={poke.id}>{poke.pokemon}</h3>
+            <div className="poke-card" key={poke.id}>
+              <h3>{poke.pokemon}</h3>
               <img src={poke.url_image} className="image"></img>
-              <p key={poke.id}>
+              <p>
                 type: {poke.type_1} | {poke.type_2}
               </p>
-              <p key={poke.id}>generation {poke.generation_id}</p>
-              <a key={poke.id} href={poke.pokedex} target="_blank" rel="noopener noreferrer">
+              <p>generation {poke.generation_id}</p>
+              <a href={poke.pokedex} target="_blank" rel="noopener noreferrer">
                 pokedex entry
               </a>
             </div>
