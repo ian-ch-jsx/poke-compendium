@@ -10,7 +10,7 @@ export async function getPokemon(query, order, selectedType, currentPage) {
   }
 
   const resp = await fetch(
-    `https://pokedex-alchemy.herokuapp.com/api/pokedex?${params.toString()}`
+    `https://pokedex-alchemy.herokuapp.com/api/pokedex?${params.toString()}&perPage=24`
   );
   const data = await resp.json();
   return data;
